@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const PORT = 3000;
+const {convert, toMoney} = require("./lib/convert")
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -12,7 +13,13 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/cotacao', (req, res) =>{
-  res.render('cotacao');
+  const {cotacao, quantidade} = req.query;
+  const conversao = convert(cotacao, quantidade);
+  res.render('cotacao', {
+    cotacao,
+    quantidade,
+    conversao
+  });
 });
 
 app.listen(PORT, err =>{
