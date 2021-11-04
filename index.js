@@ -11,6 +11,10 @@ app.get('/', (req, res)=>{
   res.render('home');
 });
 
+app.get('/cotacao', (req, res) =>{
+  res.render('cotacao');
+});
+
 app.listen(PORT, err =>{
   if(err){
     console.log('Error: ', err);

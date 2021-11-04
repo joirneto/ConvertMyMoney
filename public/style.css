@@ -6,3 +6,19 @@ h1 img {
   width: 498px;
   margin: 20px;
 }
+
+input{
+  border: 1px solid #000000;
+  background: #f3f3f3;
+  padding: 10px;
+  margin: 4px;
+  font-size: 20px;
+}
+
+button{
+  border: 1px solid #000000;
+  background: #c3c3c3;
+  padding: 10px;
+  margin: 2px;
+  font-size: 20px;
+}
