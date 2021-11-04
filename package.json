@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/joirneto/ConvertMyMoney/issues"
   },
-  "homepage": "https://github.com/joirneto/ConvertMyMoney#readme"
+  "homepage": "https://github.com/joirneto/ConvertMyMoney#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
 }
