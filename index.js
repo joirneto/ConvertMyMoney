@@ -14,7 +14,8 @@ app.get('/', (req, res)=>{
 
 app.get('/cotacao', (req, res) =>{
   const {cotacao, quantidade} = req.query;
-  if(cotacao && quantidade){
+  
+  if(cotacao && quantidade && !isNaN(cotacao) && !isNaN(quantidade)){
     const conversao = convert(cotacao, quantidade);
     res.render('cotacao', {
       cotacao: toMoney(cotacao),
