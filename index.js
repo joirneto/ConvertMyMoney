@@ -14,12 +14,19 @@ app.get('/', (req, res)=>{
 
 app.get('/cotacao', (req, res) =>{
   const {cotacao, quantidade} = req.query;
-  const conversao = convert(cotacao, quantidade);
-  res.render('cotacao', {
-    cotacao,
-    quantidade,
-    conversao
-  });
+  if(cotacao && quantidade){
+    const conversao = convert(cotacao, quantidade);
+    res.render('cotacao', {
+      cotacao: toMoney(cotacao),
+      quantidade: toMoney(quantidade),
+      conversao: toMoney(conversao),
+      error: false
+    });
+  }else{
+    res.render('cotacao', {
+      error: 'Valores invádilos!'
+    });
+  }
 });
 
 app.listen(PORT, err =>{

@@ -1,4 +1,9 @@
 <%- include('header') %>
-<h2><%= quantidade%> Dólares na Cotação de <%= cotacao%> é igual a: <%= conversao%></h2>
-
+<div class="result">
+  <% if(!error){%>
+    <h2>A <%= quantidade%> Dólares na Cotação de <%= cotacao%> é igual a: <%= conversao%> reais!</h2>
+  <% }else{%>
+    <%= error %>
+  <%} %>
+</div>
 <%- include('footer') %>

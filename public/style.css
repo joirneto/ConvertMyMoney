@@ -2,6 +2,14 @@ body{
   text-align: center;
 }
 
+.result{
+  padding: 10px;
+  border: 1px solid #cfcfcf;
+  background: #d8d8d8;
+  margin: 20px;
+
+}
+
 h1 img {
   width: 498px;
   margin: 20px;
