@@ -1,0 +1,20 @@
+{
+  "name": "convertmymoney",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joirneto/ConvertMyMoney.git"
+  },
+  "keywords": [],
+  "author": "Joir Neto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joirneto/ConvertMyMoney/issues"
+  },
+  "homepage": "https://github.com/joirneto/ConvertMyMoney#readme"
+}
