@@ -10,9 +10,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/',async (req, res)=>{
-  const cotacao = await apiBCB.getCotacao()
-  console.log('cotacao: ', cotacao)
-  res.render('home', {cotacao});
+  const {cotacao, diaUtilFormat} = await apiBCB.getCotacao()
+
+  res.render('home', {cotacao, diaUtilFormat});
 });
 
 app.get('/cotacao', (req, res) =>{
