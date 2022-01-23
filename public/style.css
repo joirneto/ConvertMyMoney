@@ -1,5 +1,8 @@
 body{
+  width: 100%;
   text-align: center;
+  background: #3E3E40;
+  background-image: url('/images/bg-base.jpg');
 }
 
 .result{
