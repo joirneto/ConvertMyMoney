@@ -1,4 +1,5 @@
-<%- include('header') %>
+<%- contentFor('secao1') %>
+
 <div class="result">
   <% if(!error){%>
     <h2>A <%= quantidade%> Dólares na Cotação de <%= cotacao%> é igual a: <%= conversao%> reais!</h2>
@@ -6,4 +7,3 @@
     <%= error %>
   <%} %>
 </div>
-<%- include('footer') %>
