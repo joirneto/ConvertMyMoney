@@ -9,7 +9,7 @@ const apiBCB = require("./lib/cotacaoBCB")
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
-//app.use(expressLayouts); 
+app.use(expressLayouts); 
 
 app.get('/',async (req, res)=>{
   const {cotacao, diaUtilFormat} = await apiBCB.getCotacao()
