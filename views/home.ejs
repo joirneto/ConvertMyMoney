@@ -1,8 +1,27 @@
-<%- contentFor('secao1') %>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<form method="get" action="/cotacao">
-  <label>Dia da cotação(dia útil): sss<%=diaUtilFormat%></label> <br>
-  <input name="cotacao" type="text" placeholder="Cotação dolar" value="<%=cotacao%>"><br>
-  <input name="quantidade" type="text" placeholder="Quantidade de dólares"><br>
-  <button>Converter!</button>
-</form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/images/favicon_io/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>ConvertMyMoney</title>
+</head>
+
+<body>
+    <%- include('header') %>
+    <div class="bg-geral">
+      <form method="get" action="/cotacao">
+        <label>Dia da cotação(dia útil): sss<%=diaUtilFormat%></label> <br>
+        <input name="cotacao" type="text" placeholder="Cotação dolar" value="<%=cotacao%>"><br>
+        <input name="quantidade" type="text" placeholder="Quantidade de dólares"><br>
+        <button>Converter!</button>
+      </form>
+      
+    </div>
+
+    <%- include('footer') %>
+
