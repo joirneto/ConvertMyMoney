@@ -13,7 +13,8 @@ app.use(expressLayouts);
 
 app.get('/',async (req, res)=>{
   const {cotacao, diaUtilFormat} = await apiBCB.getCotacao()
-
+  console.log("Cotacao", cotacao);
+  console.log("DIA ", diaUtilFormat)
   res.render('home', {cotacao, diaUtilFormat});
 });
 
