@@ -1,3 +1,7 @@
+html{
+  display: block;
+}
+
 body{
   background: #F8F7FF;
   width: 100vw;
