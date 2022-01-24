@@ -1,7 +1,12 @@
 
 body{
   margin: 0;
+  background: #4B8C49;
+}
+
+header{
   background: #F8F7FF;
+  margin: 0;
 }
 
 .logo{
