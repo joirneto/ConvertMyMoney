@@ -27,7 +27,8 @@ app.get('/cotacao', (req, res) =>{
       cotacao: toMoney(cotacao),
       quantidade: toMoney(quantidade),
       conversao: toMoney(conversao),
-      error: false
+      error: false,
+      type: 'result'
     });
   }else{
     res.render('cotacao', {
