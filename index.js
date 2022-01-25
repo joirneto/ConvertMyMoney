@@ -13,6 +13,7 @@ app.use(expressLayouts);
 
 app.get('/',async (req, res)=>{
   const {cotacao, diaUtilFormat} = await apiBCB.getCotacao()
+  console.log("OK", cotacao)
   res.render('home', {cotacao, diaUtilFormat, type: 'initial'});
 });
 
@@ -30,7 +31,7 @@ app.get('/cotacao', (req, res) =>{
     });
   }else{
     res.render('cotacao', {
-      error: 'Valores invádilos!'
+      error: 'Valores inválidos!'
     });
   }
 });
