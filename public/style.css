@@ -105,6 +105,13 @@ button{
 }
 
 @media (max-width: 600px){
+  .secao-principal{
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px){
   
 footer{
   width: 100%;
