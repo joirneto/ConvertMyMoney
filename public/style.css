@@ -29,6 +29,17 @@ header{
   padding: 8px;
 }
 
+.secao-principal{
+  background: #F8F7FF;
+  width: 400px;
+  height: 50vh;
+  margin: 16px;
+  padding: 8px;
+  display: flex;
+  border-radius: 16px;
+  box-shadow: 5px 5px 5px #b8b8b8;
+  
+}
 footer{
   background: #4B8C49;
   width: 100%;
